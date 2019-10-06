@@ -1,5 +1,14 @@
 # SwiftUI-Core-Data-Test
 
+## CloudKit notes/changes
+
+In order to use this with CloudKit yourself you will need to change the name of the data model from `com.jknlsn.CoreDataCloudKitDemo` to reference your own CloudKit container. CloudKit containers are currently not deletable, so I would recommend using one for different CloudKit testing you are doing, and just delete the contents when using for a new test. You will also need to change the CloudKit initialisation to reference this container instead of `com.jknlsn.CoreDataCloudKitDemo.`
+
+See this commit to see the complete changes made to use CloudKit instead of CoreData: 
+https://github.com/jknlsn/SwiftUI-Core-Data-Test/commit/84e82111e2f08f2f288a8868e7379764ed64a3e8
+
+## Original README
+
 Extended sample program to demonstrate how CoreData can be used with SwiftUI.
 This sample has been sort of a play ground to try to duplicate or reinvent some familiar 
 UIKit patterns using SwiftUI that are common with some Core Data based Apps.
