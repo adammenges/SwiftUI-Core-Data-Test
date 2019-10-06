@@ -15,7 +15,7 @@
 		1390164722C312B200EA7B48 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390164622C312B200EA7B48 /* CoreData.swift */; };
 		139CD87D22C2A4D500E99642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139CD87C22C2A4D500E99642 /* AppDelegate.swift */; };
 		139CD87F22C2A4D500E99642 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139CD87E22C2A4D500E99642 /* SceneDelegate.swift */; };
-		139CD88222C2A4D500E99642 /* SwiftUI_Core_Data_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 139CD88022C2A4D500E99642 /* SwiftUI_Core_Data_Test.xcdatamodeld */; };
+		139CD88222C2A4D500E99642 /* com.jknlsn.CoreDataCloudKitDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 139CD88022C2A4D500E99642 /* com.jknlsn.CoreDataCloudKitDemo.xcdatamodeld */; };
 		139CD88422C2A4D500E99642 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139CD88322C2A4D500E99642 /* ContentView.swift */; };
 		139CD88622C2A4D600E99642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 139CD88522C2A4D600E99642 /* Assets.xcassets */; };
 		139CD88922C2A4D600E99642 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 139CD88822C2A4D600E99642 /* Preview Assets.xcassets */; };
@@ -41,6 +41,7 @@
 		13E0535A22CFB6BB008664A4 /* ItemAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E0535922CFB6BB008664A4 /* ItemAddView.swift */; };
 		13F166AB2300732B00F4DBA0 /* CoreDataDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F166AA2300732B00F4DBA0 /* CoreDataDataSource.swift */; };
 		13F9297B230E195100CB4392 /* EditSaveDoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9297A230E195100CB4392 /* EditSaveDoneButton.swift */; };
+		C24EC54423497E3D002FAAC9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C24EC54323497E3D002FAAC9 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		13E0535922CFB6BB008664A4 /* ItemAddView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemAddView.swift; sourceTree = "<group>"; };
 		13F166AA2300732B00F4DBA0 /* CoreDataDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataDataSource.swift; sourceTree = "<group>"; };
 		13F9297A230E195100CB4392 /* EditSaveDoneButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSaveDoneButton.swift; sourceTree = "<group>"; };
+		C24EC54323497E3D002FAAC9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C24EC54423497E3D002FAAC9 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +123,7 @@
 				1322FA912307C23200DBBB0F /* README.md */,
 				139CD87B22C2A4D500E99642 /* SwiftUI Core Data Test */,
 				139CD87A22C2A4D500E99642 /* Products */,
+				C24EC54223497E3D002FAAC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,7 +165,7 @@
 			children = (
 				1390164622C312B200EA7B48 /* CoreData.swift */,
 				13F166AA2300732B00F4DBA0 /* CoreDataDataSource.swift */,
-				139CD88022C2A4D500E99642 /* SwiftUI_Core_Data_Test.xcdatamodeld */,
+				139CD88022C2A4D500E99642 /* com.jknlsn.CoreDataCloudKitDemo.xcdatamodeld */,
 				13B2A8FA230BA12100054945 /* Item+CoreDataClass.swift */,
 				13B2A8FB230BA12100054945 /* Item+CoreDataProperties.swift */,
 				13B2A8FC230BA12100054945 /* Attribute+CoreDataClass.swift */,
@@ -231,6 +235,14 @@
 				139CD88322C2A4D500E99642 /* ContentView.swift */,
 			);
 			path = "Tab View";
+			sourceTree = "<group>";
+		};
+		C24EC54223497E3D002FAAC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C24EC54323497E3D002FAAC9 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,7 +327,7 @@
 				13BB3F95230F12D000F1CA35 /* ItemSelectionManager.swift in Sources */,
 				139015FD22C2E1A800EA7B48 /* ItemEditView.swift in Sources */,
 				13BB3F9C2310B09300F1CA35 /* UserEnvironment.swift in Sources */,
-				139CD88222C2A4D500E99642 /* SwiftUI_Core_Data_Test.xcdatamodeld in Sources */,
+				139CD88222C2A4D500E99642 /* com.jknlsn.CoreDataCloudKitDemo.xcdatamodeld in Sources */,
 				1390164722C312B200EA7B48 /* CoreData.swift in Sources */,
 				13E0535A22CFB6BB008664A4 /* ItemAddView.swift in Sources */,
 				13F9297B230E195100CB4392 /* EditSaveDoneButton.swift in Sources */,
@@ -474,7 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Core Data Test\"/Preview\\ Content";
-				DEVELOPMENT_TEAM = 64WN437W3Z;
+				DEVELOPMENT_TEAM = FL3R79336R;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI Core Data Test/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -482,7 +494,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ForeTheGreen.SwiftUI-Core-Data-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jknlsn.SwiftUI-Core-Data-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_UIKITFORMAC = YES;
 				SWIFT_VERSION = 5.0;
@@ -498,7 +510,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Core Data Test\"/Preview\\ Content";
-				DEVELOPMENT_TEAM = 64WN437W3Z;
+				DEVELOPMENT_TEAM = FL3R79336R;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI Core Data Test/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -506,7 +518,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ForeTheGreen.SwiftUI-Core-Data-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jknlsn.SwiftUI-Core-Data-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_UIKITFORMAC = YES;
 				SWIFT_VERSION = 5.0;
@@ -538,13 +550,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		139CD88022C2A4D500E99642 /* SwiftUI_Core_Data_Test.xcdatamodeld */ = {
+		139CD88022C2A4D500E99642 /* com.jknlsn.CoreDataCloudKitDemo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				139CD88122C2A4D500E99642 /* SwiftUI_Core_Data_Test.xcdatamodel */,
 			);
 			currentVersion = 139CD88122C2A4D500E99642 /* SwiftUI_Core_Data_Test.xcdatamodel */;
-			path = SwiftUI_Core_Data_Test.xcdatamodeld;
+			path = com.jknlsn.CoreDataCloudKitDemo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
